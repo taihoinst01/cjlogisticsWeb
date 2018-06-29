@@ -19,7 +19,7 @@ $(function () {
     //챗봇창 상단 생성
     $(".wc-header > span").add(
         "<span class='chatTitle'></span>" +
-        "<span class='chatTitleText'><strong>Safety</strong> ChatBot</span>" +
+        "<span class='chatTitleText'><strong>CJ</strong> ChatBot</span>" +
         "<span class='topIcon btnClose'><button class='topIcon03'></button></span>" +
         "<span class='topIcon btnLayer btnLayerFull'><button class='topIcon02'></button></span>" +
         "<span class='topIcon btnMin'><button class='topIcon01'></button></span>").appendTo(".wc-header");
@@ -50,8 +50,8 @@ $(function () {
     });
     $(document).on('click', '.wc-header [class*=btnLayer]', function () {
         if ($(this).hasClass('btnLayerMid')) {
-            $('.wc-chatview-panel').css({ "overflow": "visible" });
-            $('.wc-chatview-panel').animate({ "height": "582px" }, "fast");
+            //$('.wc-chatview-panel').css({ "overflow": "visible" });
+            $('.wc-chatview-panel').animate({ "height": "528px" }, "fast");
             $('.wc-console, wc-message-pane').show();
             $('.btnLayer').removeClass('btnLayerMid').addClass('btnLayerFull');
             $('.btnLayer > button').css({ 'display': 'inline-block' }).removeClass('topIcon02-1').addClass('topIcon02');
